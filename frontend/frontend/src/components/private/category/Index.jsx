@@ -1,14 +1,14 @@
 
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import axios from 'axios';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { confirmAlert } from 'react-confirm-alert';
 import 'react-confirm-alert/src/react-confirm-alert.css';
-import { FaEdit, FaSearch, FaTags, FaTrash } from 'react-icons/fa';
+import { FaSearch, FaTags, FaTrash } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+// 
 const AllCategory = () => {
     const [search, setSearch] = useState('');
     const [csrfToken, setCsrfToken] = useState('');
