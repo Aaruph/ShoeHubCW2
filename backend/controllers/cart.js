@@ -9,6 +9,8 @@ exports.getCart = async (req, res) => {
         res.status(500).json({ error: "Error fetching cart" });
     }
 };
+// 
+  
 
 // Add Item to Cart
 exports.addToCart = async (req, res) => {
