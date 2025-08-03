@@ -1,7 +1,7 @@
 
 import { useMutation } from '@tanstack/react-query';
 import axios from 'axios';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { FaPlus } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -12,6 +12,7 @@ const AddCategory = () => {
         description: '',
         image: null
     });
+    // 
     const [imagePreview, setImagePreview] = useState(null);
     const [csrfToken, setCsrfToken] = useState('');
     const [isCsrfLoading, setIsCsrfLoading] = useState(true);
